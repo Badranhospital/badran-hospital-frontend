@@ -1,0 +1,219 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+type FooterDict = {
+  description: string;
+  followUs: string;
+  copyright: string;
+  contact: {
+    address: string;
+    email: string;
+  };
+  links: {
+    aboutUs: string;
+    healthHub: string;
+    findDoctor: string;
+    findSpeciality: string;
+    medicalTourism: string;
+    careers: string;
+    contactUs: string;
+    faqs: string;
+    privacyPolicy: string;
+    termsConditions: string;
+  };
+};
+
+const getFooterLinks = (dict: FooterDict["links"], lang: string) => ({
+  column1: [
+    { label: dict.aboutUs, href: `/${lang}/about` },
+    { label: dict.healthHub, href: `/${lang}/health-hub` },
+    { label: dict.findDoctor, href: `/${lang}/find-a-doctor` },
+    { label: dict.findSpeciality, href: `/${lang}/find-a-doctor` },
+    { label: dict.medicalTourism, href: `/${lang}/medical-tourism` },
+  ],
+  column2: [
+    { label: dict.careers, href: `/${lang}/contact` },
+    { label: dict.contactUs, href: `/${lang}/contact` },
+    { label: dict.faqs, href: `/${lang}/faq` },
+    { label: dict.privacyPolicy, href: `/${lang}/privacy-policy` },
+    { label: dict.termsConditions, href: `/${lang}/terms-conditions` },
+  ],
+});
+
+const socialLinks = [
+  {
+    icon: "/icons/facebook.svg",
+    href: "https://facebook.com/DrBadranhospital/",
+    label: "Facebook",
+  },
+  {
+    icon: "/icons/Instagram.svg",
+    href: "https://www.instagram.com/badran.hospital/",
+    label: "Instagram",
+  },
+  {
+    icon: "/icons/Linkedin.svg",
+    href: "https://www.linkedin.com/company/badran-hospital-eg/",
+    label: "LinkedIn",
+  },
+];
+
+export function Footer({ dict, lang }: { dict: FooterDict; lang: string }) {
+  const footerLinks = getFooterLinks(dict.links, lang);
+  return (
+    <footer className="bg-linear-to-b from-[#B2EBF2] to-[#80DEEA]">
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-5 py-10 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 ">
+          {/* Column 1: Logo & Description */}
+          <div className="space-y-6">
+            <Image
+              src="/icons/d-logo.svg"
+              alt="Badran Hospital"
+              width={180}
+              height={90}
+              className="h-24 w-auto"
+            />
+            <p className="text-[#1A3B5C] text-sm md:text-base leading-relaxed font-light text-balance">
+              {dict.description}
+            </p>
+          </div>
+
+          {/* Column 2: Contact Info */}
+          <div className="space-y-4 lg:pt-2">
+            <Link
+              href="https://maps.app.goo.gl/wJN2wjtGVphsQcPh9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 group"
+            >
+              <Image
+                src="/icons/icon-12.svg"
+                alt="Location"
+                width={26}
+                height={26}
+                className="mt-1 shrink-0"
+              />
+              <span className="text-[#1A3B5C] leading-relaxed group-hover:text-[#0097A7] transition-colors xl:whitespace-nowrap">
+                {dict.contact.address}
+              </span>
+            </Link>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/icons/icon-13.svg"
+                alt="Phone"
+                width={26}
+                height={26}
+                className="shrink-0"
+              />
+              <div className="flex flex-wrap gap-1 text-[#1A3B5C]">
+                <Link
+                  href="tel:19986"
+                  className="hover:text-[#0097A7] transition-colors"
+                >
+                  19986
+                </Link>
+                <span>/</span>
+                <Link
+                  href="tel:+201029640837"
+                  className="hover:text-[#0097A7] transition-colors whitespace-nowrap"
+                >
+                  +2 0102 964 0837
+                </Link>
+              </div>
+            </div>
+            <Link
+              href="mailto:info@badranhospital.com"
+              className="flex items-center gap-3 group"
+            >
+              <Image
+                src="/icons/icon-18.svg"
+                alt="Email"
+                width={26}
+                height={26}
+                className="shrink-0"
+              />
+              <span className="text-[#1A3B5C] group-hover:text-[#0097A7] transition-colors whitespace-nowrap">
+                {dict.contact.email}
+              </span>
+            </Link>
+          </div>
+
+          {/* Navigation Links - Mobile: Side-by-side, Desktop: Standard Columns with Spacing */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-2 grid grid-cols-2 gap-4 lg:pl-20 pr-12">
+            {/* Column 3: Navigation Links 1 */}
+            <div className="lg:pt-2">
+              <nav className="space-y-3">
+                {footerLinks.column1.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="block text-[#1A3B5C] hover:text-[#0097A7] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Column 4: Navigation Links 2 */}
+            <div className="lg:pt-2 ">
+              <nav className="space-y-3">
+                {footerLinks.column2.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="block text-[#1A3B5C] hover:text-[#0097A7] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-[#0097A7]/20">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <span className="text-[#1A3B5C] font-medium">
+                {dict.followUs}
+              </span>
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => (
+                  <Link
+                    key={social.label}
+                    href={social.href}
+                    className="hover:scale-110 transition-transform duration-200"
+                    aria-label={social.label}
+                  >
+                    <Image
+                      src={social.icon || "/placeholder.svg"}
+                      alt={social.label}
+                      width={24}
+                      height={24}
+                      className="w-6 h-6"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Copyright */}
+            <p className="text-[#1A3B5C] text-sm text-center md:text-right">
+              {dict.copyright.replace(
+                "{year}",
+                new Date().getFullYear().toString(),
+              )}
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,492 @@
+{
+  "nav": {
+    "aboutUs": "About Us",
+    "coe": "Center of Excellence",
+    "findDoctor": "Find a Doctor/Speciality",
+    "medicalTourism": "Medical Tourism",
+    "healthHub": "Health Hub",
+    "contact": "Contact us",
+    "viewAll": "View all",
+    "language": "EN"
+  },
+  "home": {
+    "hero": {
+      "searchPlaceholder": "Search for doctors, Specializations...",
+      "speciality": "Speciality",
+      "doctor": "Doctor",
+      "bookNow": "Book Now"
+    },
+
+    "about": {
+      "quote": "Professor Dr. Ibrahim Badran (1924–2015) was a pioneering Egyptian surgeon and academic. He served as Egypt's Minister of Health (1976–1978) and President of Cairo University (1978–1980). Renowned as the \"father of surgery in Egypt,\" he authored seven books and over 120 scientific papers.",
+      "buttonText": "About Us"
+    },
+    "coe": {
+      "subtitle": "Where expertise meets advanced care.",
+      "title": "Center of Excellence",
+      "description": "At Badran Hospital, our Centers of Excellence represent the highest level of specialized medical care. Led by top consultants and supported by advanced technology, each center delivers trusted outcomes and exceptional patient experiences across our key specialties.",
+      "buttonText": "SEE MORE",
+      "specialties": {
+        "cardiology": {
+          "title": "Cardiology",
+          "description": "Advanced heart care with top cardiologists and state-of-the-art diagnostics.",
+          "subDescription": "The Cardiology Center provides comprehensive cardiac services that covering early detection, advanced treatment, and 24/7 emergency support. Our specialists use the latest technologies to ensure accurate assessments and timely interventions.",
+          "servicesTitle": "Our Services:",
+          "services": [
+            "ECG, <strong>Echocardiography</strong> & Stress Tests",
+            "<strong>Holter Monitoring</strong> (24–48 hours)",
+            "<strong>CT Coronary</strong> Angiography",
+            "Cardiac <strong>Catheterization</strong> (Cath Lab)",
+            "Management of <strong>coronary artery disease</strong>",
+            "Treatment of <strong>arrhythmias & hypertension</strong>",
+            "<strong>Heart failure</strong> & valve disease management",
+            "<strong>Emergency</strong> chest pain care",
+            "<strong>Long-term follow-up</strong> and prevention programs"
+          ]
+        },
+        "oncology": {
+          "title": "Oncology",
+          "description": "Compassionate cancer care powered by expert oncologists and evidence-based treatment pathways.",
+          "subDescription": "Our Oncology Center offers full-spectrum cancer management with a strong focus on patient safety, comfort, and emotional support. We combine accurate diagnostics, modern therapies, and multidisciplinary follow-up programs.",
+          "servicesTitle": "Our Services:",
+          "services": [
+            "<strong>Cancer</strong> diagnosis & staging",
+            "<strong>Chemotherapy administration</strong>",
+            "<strong>Hormonal & targeted therapies</strong>",
+            "Full <strong>diagnostic support</strong> (lab, CT, ultrasound)",
+            "<strong>Private</strong> infusion suites",
+            "<strong>Oncology-trained</strong> nursing team",
+            "<strong>Nutritional & psychological support</strong>",
+            "<strong>Post-treatment follow-up</strong> and palliative care",
+            "<strong>Inpatient & ICU support</strong> for complex cases"
+          ]
+        },
+        "oneDaySurgery": {
+          "title": "One-Day Surgery",
+          "description": "Efficient, safe surgical procedures enabling same-day discharge with expert medical supervision.",
+          "subDescription": "The One-Day Surgery Center is designed for procedures that allow patients to return home the same day. With streamlined workflows, modern operating rooms, and dedicated recovery care, we ensure safety, comfort, and continuity.",
+          "servicesTitle": "Our Services:",
+          "services": [
+            "<strong>Day-case surgical procedures</strong>",
+            "<strong>Minimally invasive surgeries</strong>",
+            "<strong>Anesthesia and recovery supervision</strong>",
+            "<strong>Short-stay post-operative monitoring</strong>",
+            "<strong>Pain management and discharge planning</strong>",
+            "<strong>Scheduled follow-up and recovery guidance</strong>"
+          ]
+        },
+        "generalSurgery": {
+          "title": "General Surgery",
+          "description": "Safe, effective surgical care delivered by experienced surgeons using modern, evidence-based techniques.",
+          "subDescription": "The General Surgery Center provides comprehensive surgical services for a wide range of conditions. Our approach prioritizes patient safety, precise surgical outcomes, and coordinated pre- and post-operative care.",
+          "servicesTitle": "Our Services:",
+          "services": [
+            "<strong>General & Laparoscopic surgery</strong>",
+            "<strong>Hernia repair procedures</strong>",
+            "<strong>Gallbladder & appendix surgery</strong>",
+            "<strong>Breast & soft tissue surgery</strong>",
+            "<strong>Thyroid and endocrine surgery</strong>",
+            "<strong>Pre-operative assessment & post-operative follow-up</strong>"
+          ]
+        },
+        "gastroenterology": {
+          "title": "Gastroenterology",
+          "description": "Expert digestive health care with advanced endoscopy and fast, safe procedures.",
+          "subDescription": "The Gastroenterology Center provides complete diagnostic and therapeutic services for diseases of the stomach, intestines, liver, pancreas, and biliary system—supported by modern endoscopy suites and strict sterilization protocols.",
+          "servicesTitle": "Our Services:",
+          "services": [
+            "Upper & lower GI <strong>endoscopy</strong>",
+            "<strong>Polyp removal & biopsies</strong>",
+            "<strong>Treatment of GI bleeding</strong>",
+            "Diagnosis & management of <strong>liver & biliary diseases</strong>",
+            "<strong>Pancreatic disease evaluation</strong>",
+            "<strong>Early GI cancer detection</strong>",
+            "<strong>Radiology & laboratory</strong> collaboration for accurate diagnosis",
+            "<strong>High-standard endoscope</strong> cleaning & sterilization"
+          ]
+        }
+      }
+    },
+    "services": {
+      "subtitle": "Comprehensive Care for Every Need",
+      "title": "Our Medical Services",
+      "description": "At Badran Hospital, we offer a full range of medical services designed to provide accurate diagnosis, effective treatment, and continuous care. From emergency response to advanced surgeries, our departments work together to ensure every patient receives the highest standard of medical attention and comfort.",
+      "items": {
+        "surgery": {
+          "title": "Surgery Department",
+          "description": "Our surgical team combines decades of experience with advanced techniques to ensure safe, successful procedures."
+        },
+        "icu": {
+          "title": "Intensive Care Unit (ICU)",
+          "description": "Equipped with state-of-the-art monitoring systems, our ICU provides 24/7 critical care for patients who need continuous observation and specialized medical attention."
+        },
+        "inpatient": {
+          "title": "Inpatient Clinics",
+          "description": "Safe, comfortable, and closely monitored recovery. Our inpatient department provides 24/7 medical supervision and a supportive healing environment for patients who require extended care or post-surgery recovery."
+        },
+        "outpatient": {
+          "title": "Outpatient Clinics",
+          "description": "Our clinics bring together leading specialists across multiple fields to provide accurate diagnosis, follow-up, and personalized treatment for every patient."
+        },
+        "laboratory": {
+          "title": "Laboratory Services",
+          "description": "Our fully equipped lab delivers reliable test results with precision and speed, supporting doctors in accurate diagnosis and treatment planning."
+        },
+        "emergency": {
+          "title": "Emergency Department (ER)",
+          "description": "Our emergency unit operates 24/7 with a dedicated medical team ready to respond quickly to urgent and critical cases."
+        },
+        "dayCase": {
+          "title": "Day Case Unit",
+          "description": "For procedures that require no overnight stay, our Day Case Unit ensures comfort, safety, and a quick recovery that allowing patients to return home the same day."
+        },
+        "radiology": {
+          "title": "Radiology Department",
+          "description": "Using advanced imaging technologies such as CT, MRI, and digital X-ray, our radiology department supports fast and precise diagnosis for all medical conditions."
+        }
+      }
+    },
+
+    "gallery": {
+      "subtitle": "Our Legacy",
+      "title": "Expertise, and deep respect for every patient."
+    }
+  },
+  "healthHub": {
+    "subtitle": "Explore our blog for expert advice and heartwarming stories from our trusted vets! Whether you're looking for tips on pet care, nutrition, or just want to learn more about your furry friend.",
+    "title": "Health Hub",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "searchPlaceholder": "Search articles...",
+    "filterSpecialty": "Filter by specialty",
+    "allSpecialties": "All Specialties",
+    "readMore": "Read More",
+    "publishedOn": "Published on"
+  },
+  "coePage": {
+    "hero": {
+      "subtitle": "Where expertise meets advanced care.",
+      "title": "Centers of Excellence",
+      "description": "At Badran Hospital, our Centers of Excellence combine highly experienced consultants, advanced medical technologies, and patient-centered care models. Each center is led by specialized teams committed to accurate diagnosis, effective treatment, and safe, comfortable patient experiences.",
+      "overview": "Below is an overview of our Center of Excellence..."
+    }
+  },
+  "findDoctorPage": {
+    "title": "Find a Doctor/Speciality",
+    "subtitle": "Search from our network of experienced healthcare professionals."
+  },
+  "about": {
+    "hero": {
+      "subtitle": "Where expertise meets advanced care.",
+      "title": "Excellence of Healthcare",
+      "description": "Badran Hospital delivers trusted medical care with clinical excellence and personalized attention in the heart of Dokki, Cairo.",
+      "stats": {
+        "iso": {
+          "title": "ISO Certified",
+          "subtitle": "Medical Excellence"
+        },
+        "years": {
+          "title": "45+",
+          "subtitle": "Years"
+        },
+        "specialties": {
+          "title": "15+",
+          "subtitle": "Specialities"
+        },
+        "care": {
+          "title": "24/7",
+          "subtitle": "Care"
+        }
+      }
+    },
+    "journey": {
+      "subtitle": "Our Journey",
+      "title": "45 Years of Trust & Care",
+      "items": {
+        "founded": {
+          "title": "Founded in 1979",
+          "description": "Established as a private multi-specialty hospital to meet the essential medical needs of the Dokki community."
+        },
+        "growth": {
+          "title": "Continuous Growth",
+          "description": "Expanded services, upgraded technologies, and developed new departments while maintaining our core values."
+        },
+        "leading": {
+          "title": "Leading Institution Today",
+          "description": "One of the most recognized medical institutions offering complete continuum of care with advanced diagnostics and specialized clinics."
+        }
+      }
+    },
+    "missionVision": {
+      "subtitle": "Our Journey",
+      "title": "Mission & Vision",
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide safe, high-quality, patient-centered healthcare delivered with compassion, professionalism, and integrity. We ensure every patient receives accurate diagnosis, effective treatment, and continuous support throughout their healing journey."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the most trusted and accessible hospital in Dokki and Greater Cairo-recognized for medical excellence, modern healthcare solutions, and a commitment to improving the lives of our patients and community."
+      }
+    },
+    "coreValues": {
+      "subtitle": "What We Stand For",
+      "title": "Our Core Values",
+      "values": {
+        "patientFirst": {
+          "title": "Patient First",
+          "description": "We place patient safety, comfort, and well-being at the center of everything we do."
+        },
+        "integrity": {
+          "title": "Medical Integrity",
+          "description": "We practice medicine with honesty, transparency, and the highest ethical standards."
+        },
+        "excellence": {
+          "title": "Clinical Excellence",
+          "description": "We are committed to delivering high-quality care through continuous improvement and adherence to best medical practices."
+        },
+        "compassion": {
+          "title": "Compassionate Care",
+          "description": "We treat every patient with empathy, respect, and genuine human care."
+        },
+        "teamwork": {
+          "title": "Teamwork & Collaboration",
+          "description": "We believe that strong collaboration among healthcare professionals leads to better patient outcomes."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We embrace modern medical technologies and innovative approaches to enhance diagnosis, treatment, and patient experience."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience Excellence?",
+      "subtitle": "Join thousands of patients who trust Badran Hospital for their healthcare needs.",
+      "buttonText": "Book Appointment"
+    }
+  },
+  "medicalTourism": {
+    "hero": {
+      "title": "Your health journey starts here",
+      "subtitle": "Experience exceptional medical care combined with the warmth of Egyptian hospitality. We make international healthcare simple, safe, and seamless."
+    },
+    "weOffer": {
+      "subtitle": "Why Egypt?",
+      "title": "World-Class Healthcare at Accessible Prices",
+      "items": {
+        "costEffective": {
+          "title": "Cost Effective",
+          "description": "Save 40-60% on medical procedures without compromising quality."
+        },
+        "noWaiting": {
+          "title": "No Waiting Lists",
+          "description": "Quick access to treatments with minimal wait times."
+        },
+        "expertDoctors": {
+          "title": "Expert Doctors",
+          "description": "Internationally trained specialists with decades of experience."
+        },
+        "primeLocation": {
+          "title": "Prime Location",
+          "description": "Easy access from major international airports and hotels."
+        }
+      }
+    },
+    "steps": {
+      "subtitle": "Your Journey",
+      "title": "Five Simple Steps to Better Health",
+      "items": {
+        "step1": {
+          "title": "Initial Consultation",
+          "description": "Save 40-60% on medical procedures without compromising quality."
+        },
+        "step2": {
+          "title": "Travel Planning",
+          "description": "We arrange your visa, flights, accommodation, and local transportation."
+        },
+        "step3": {
+          "title": "Arrival & Welcome",
+          "description": "Airport pickup and settling into comfortable accommodations near the hospital."
+        },
+        "step4": {
+          "title": "Medical Care",
+          "description": "Comprehensive treatment with our expert medical team using advanced facilities."
+        },
+        "step5": {
+          "title": "Recovery & Follow-up",
+          "description": "Post-treatment care, recovery monitoring, and continued support back home."
+        }
+      }
+    },
+    "services": {
+      "subtitle": "Our Services",
+      "title": "Comprehensive Medical Tourism Packages",
+      "items": {
+        "surgical": {
+          "title": "Surgical Procedures",
+          "description": "Comprehensive surgical care including orthopedic, general surgery, and minimally invasive procedures with complete pre and post-operative support.",
+          "features": [
+            "Pre-surgery consultation",
+            "Advanced surgical facilities",
+            "Recovery accommodation",
+            "Post-operative care",
+            "Follow-up support"
+          ]
+        },
+        "diagnostic": {
+          "title": "Diagnostic & Consultation",
+          "description": "Comprehensive health assessments, second opinions, and advanced diagnostic testing using state-of-the-art imaging and laboratory facilities.",
+          "features": [
+            "Full health screening",
+            "Specialist consultations",
+            "Advanced diagnostics",
+            "Detailed reports",
+            "Treatment planning"
+          ]
+        },
+        "wellness": {
+          "title": "Wellness Programs",
+          "description": "Preventive care and wellness packages designed for health optimization."
+        },
+        "chronicCare": {
+          "title": "Chronic Care Management",
+          "description": "Long-term treatment plans for ongoing health conditions with regular monitoring."
+        },
+        "emergency": {
+          "title": "Emergency Services",
+          "description": "24/7 emergency care and ICU facilities for urgent medical needs."
+        }
+      }
+    },
+    "care": {
+      "title": "Everything You Need, All Taken Care Of",
+      "description": "Focus on your recovery while we handle all the details. Our comprehensive packages ensure a stress-free medical journey from start to finish.",
+      "items": {
+        "travel": {
+          "title": "Travel Coordination",
+          "description": "Visa assistance, flight booking, and airport transfers."
+        },
+        "accommodation": {
+          "title": "Accommodation",
+          "description": "Comfortable hotel stays near the hospital."
+        },
+        "language": {
+          "title": "Language Support",
+          "description": "Multilingual coordinators and translators."
+        },
+        "documentation": {
+          "title": "Documentation",
+          "description": "Medical records, reports, and all paperwork."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Begin Your Health Journey?",
+      "description": "Contact our dedicated medical tourism team today for a free consultation. We're here to answer all your questions and guide you every step of the way.",
+      "buttonText": "Contact us"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "sections": {
+      "intro": "Badran Hospital is committed to protecting your privacy and ensuring the confidentiality of your personal information. This Privacy Policy explains how we collect, use, and protect information when you interact with our website, services, and medical facilities.",
+      "infoCollect": {
+        "title": "Information We Collect",
+        "content": "We may collect the following types of information:\n\n- Personal Information: Name, contact details."
+      },
+      "howWeUse": {
+        "title": "How We Use Your Information",
+        "content": "Your information is used for purposes including:\n\n- Providing medical care and services.\n- Scheduling appointments and sending reminders.\n- Communicating health updates or educational content.\n- Improving our services and website experience.\n- Complying with legal or regulatory requirements."
+      },
+      "infoSharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell or rent your personal information. We may share your information only:\n\n- With medical professionals involved in your care.\n- With service providers who help us operate our systems, under strict confidentiality agreements.\n- As required by law or regulatory authorities."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical, administrative, and physical safeguards to protect your data against unauthorized access, alteration, or loss."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "You have the right to:\n\n- Access your personal and medical information.\n- Request corrections or updates to your data.\n- Request deletion of non-essential data, subject to legal and medical obligations."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy periodically. Updates will be posted on this page with a revised effective date."
+      }
+    }
+  },
+  "termsConditions": {
+    "title": "Terms and Conditions",
+    "sections": {
+      "useOfWebsite": {
+        "title": "Use of Website",
+        "content": "By accessing our website, you agree to use it only for lawful purposes. You may not:\n\n- Upload harmful, offensive, or illegal content.\n- Attempt to gain unauthorized access to our systems.\n- Interfere with the website's operation or other users' access."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on this website, including text, images, and videos, is the property of Badran Hospital and is protected under copyright laws. Unauthorized use or reproduction is prohibited."
+      },
+      "appointmentPolicies": {
+        "title": "Appointment and Service Policies",
+        "content": "- Appointments should be booked in advance. Walk-ins are accepted based on availability.\n- Cancellation or rescheduling should be communicated at least 24 hours in advance.\n- Patients must provide accurate personal and medical information for proper care."
+      },
+      "healthDisclaimer": {
+        "title": "Health Information Disclaimer",
+        "content": "The content on our website is for general informational purposes only and does not replace professional medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider for medical concerns."
+      },
+      "limitationLiability": {
+        "title": "Limitation of Liability",
+        "content": "Badran Hospital is not liable for damages resulting from the use or inability to use our website or services, except as required by applicable law."
+      },
+      "changesToPolicies": {
+        "title": "Changes to Policies",
+        "content": "We reserve the right to modify these policies at any time. Updates will be posted on our website."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact us",
+    "subtitle": "Your health and safety are our priority. Find the right way to reach us for care, questions, or support.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Type in your name...",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "(123) 456 - 789",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Type your subject here",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Type your message here...",
+      "send": "Send",
+      "success": "Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "hospitalAddress": "Hospital Address",
+      "phone": "Phone",
+      "email": "Email Us",
+      "location": "Our Location"
+    }
+  },
+  "footer": {
+    "description": "Badran Hospital delivers trusted medical care with clinical excellence and personalized attention in the heart of Dokki, Cairo.",
+    "followUs": "Follow Us",
+    "copyright": "Copyright © {year} Badran Hospital. All rights reserved.",
+    "contact": {
+      "address": "3 Al Ahrar St., Dokki, Mohandessein, Egypt.",
+      "email": "info@badranhospital.com"
+    },
+    "links": {
+      "aboutUs": "About Us",
+      "healthHub": "Health Hub",
+      "findDoctor": "Find a Doctor",
+      "findSpeciality": "Find a speciality",
+      "medicalTourism": "Medical Tourism",
+      "careers": "Careers",
+      "contactUs": "Contact Us",
+      "faqs": "FAQs",
+      "privacyPolicy": "Privacy Policy",
+      "termsConditions": "Terms and Conditions"
+    }
+  }
+}
