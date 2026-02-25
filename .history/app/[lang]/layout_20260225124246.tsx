@@ -60,7 +60,6 @@ export default async function RootLayout({
 
           <Footer dict={dict.footer} lang={lang} />
           <CollapsibleBtn lang={lang} />
-          <SpeedInsights />
         </NuqsAdapter>
       </body>
     </html>

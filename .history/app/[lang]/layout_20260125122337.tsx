@@ -7,7 +7,6 @@ import { CollapsibleBtn } from "@/components/shared/collapsible-btn";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -57,10 +56,8 @@ export default async function RootLayout({
         <NuqsAdapter>
           <Navbar lang={lang} dict={dict.nav} />
           {children}
-
           <Footer dict={dict.footer} lang={lang} />
           <CollapsibleBtn lang={lang} />
-          <SpeedInsights />
         </NuqsAdapter>
       </body>
     </html>
