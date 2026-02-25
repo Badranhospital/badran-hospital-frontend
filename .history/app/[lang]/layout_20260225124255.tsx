@@ -8,7 +8,6 @@ import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -58,11 +57,11 @@ export default async function RootLayout({
         <NuqsAdapter>
           <Navbar lang={lang} dict={dict.nav} />
           {children}
+
           <Footer dict={dict.footer} lang={lang} />
           <CollapsibleBtn lang={lang} />
+          <SpeedInsights />
         </NuqsAdapter>
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );

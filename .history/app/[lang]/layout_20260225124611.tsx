@@ -58,10 +58,11 @@ export default async function RootLayout({
         <NuqsAdapter>
           <Navbar lang={lang} dict={dict.nav} />
           {children}
+
           <Footer dict={dict.footer} lang={lang} />
           <CollapsibleBtn lang={lang} />
+          <SpeedInsights />
         </NuqsAdapter>
-        <SpeedInsights />
         <Analytics />
       </body>
     </html>
