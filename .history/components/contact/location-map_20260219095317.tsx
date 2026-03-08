@@ -3,7 +3,7 @@
 // Free OpenStreetMap embed — no API key required
 export function LocationMap() {
   return (
-    <div className="w-full h-95 rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+    <div className="w-full h-[380px] rounded-2xl overflow-hidden shadow-lg border-4 border-white">
       <iframe
         width="100%"
         height="100%"

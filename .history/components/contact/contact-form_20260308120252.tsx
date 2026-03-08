@@ -163,11 +163,8 @@ export function ContactForm({ dict }: ContactFormProps) {
         />
         <Button
           type="submit"
-          className="w-full h-14  text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+          className="w-full h-14 bg-[#0FA5A1] hover:bg-[#0c8a87] text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
           disabled={isSubmitting}
-          style={{
-            background: "linear-gradient(to right, #008DC3, #004268)",
-          }}
         >
           {isSubmitting ? "Sending..." : dict.send}
         </Button>

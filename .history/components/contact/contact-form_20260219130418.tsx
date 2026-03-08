@@ -153,7 +153,7 @@ export function ContactForm({ dict }: ContactFormProps) {
               <FormControl>
                 <Textarea
                   placeholder={dict.messagePlaceholder}
-                  className="min-h-50 bg-white border-gray-100 rounded-3xl p-6 shadow-sm focus:border-[#0FA5A1] focus:ring-[#0FA5A1]/20 transition-all font-medium text-gray-600 placeholder:text-gray-400 resize-none"
+                  className="min-h-[200px] bg-white border-gray-100 rounded-3xl p-6 shadow-sm focus:border-[#0FA5A1] focus:ring-[#0FA5A1]/20 transition-all font-medium text-gray-600 placeholder:text-gray-400 resize-none"
                   {...field}
                 />
               </FormControl>
@@ -163,11 +163,8 @@ export function ContactForm({ dict }: ContactFormProps) {
         />
         <Button
           type="submit"
-          className="w-full h-14  text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+          className="w-full h-14 bg-[#0FA5A1] hover:bg-[#0c8a87] text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
           disabled={isSubmitting}
-          style={{
-            background: "linear-gradient(to right, #008DC3, #004268)",
-          }}
         >
           {isSubmitting ? "Sending..." : dict.send}
         </Button>

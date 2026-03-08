@@ -63,14 +63,14 @@ export default async function ContactPage({
                 <div className="flex flex-row gap-1 mt-1">
                   <a
                     href="tel:19986"
-                    className="text-[#274760] text-lg font-medium hover:underline"
+                    className="text-[#0FA5A1] text-lg font-medium hover:underline"
                   >
                     19986
                   </a>
-                  <span className="text-[#274760] text-lg font-medium">/</span>
+                  <span className="text-[#0FA5A1] text-lg font-medium">/</span>
                   <a
                     href="tel:+20102964083"
-                    className="text-[#274760] text-lg font-medium hover:underline"
+                    className="text-[#0FA5A1] text-lg font-medium hover:underline"
                   >
                     +2 0102 964 0837
                   </a>
@@ -83,7 +83,7 @@ export default async function ContactPage({
                 </h3>
                 <a
                   href={`mailto:${tFooter.email}`}
-                  className="text-[#274760] mt-1 text-lg font-medium hover:underline block"
+                  className="text-[#0FA5A1] mt-1 text-lg font-medium hover:underline block"
                 >
                   {tFooter.email}
                 </a>
@@ -97,7 +97,7 @@ export default async function ContactPage({
                   href="https://maps.app.goo.gl/wJN2wjtGVphsQcPh9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#274760] mt-1 text-lg font-medium hover:underline block max-w-sm"
+                  className="text-[#0FA5A1] mt-1 text-lg font-medium hover:underline block max-w-sm"
                 >
                   {tFooter.address}
                 </a>

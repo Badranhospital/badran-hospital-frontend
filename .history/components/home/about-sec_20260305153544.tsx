@@ -28,7 +28,7 @@ export function AboutSection({
                 alt="Dr. Badran"
                 width={700}
                 height={700}
-                className="w-full h-auto object-contain md:min-h-125"
+                className="w-full h-auto object-contain md:min-h-[500px]"
                 priority
               />
             </div>
