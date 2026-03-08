@@ -7,6 +7,7 @@ import { CollapsibleBtn } from "@/components/shared/collapsible-btn";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
+import { HospitalSchema } from "@/components/schema/hospital-schema";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,15 +22,52 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
+  const title =
+    lang === "ar"
+      ? "مستشفى بدران - حيث تلتقي الخبرة بالرعاية المتقدمة"
+      : "Badran Hospital - Where Expertise Meets Advanced Care";
+  const description =
+    lang === "ar"
+      ? "يقدم مستشفى بدران رعاية طبية احترافية وإنسانية مع أكثر من 45 عامًا من الخدمة الموثوقة. ابحث عن أفضل المتخصصين في أمراض القلب والأورام والعظام والمزيد."
+      : "Badran Hospital provides professional, humane medical care with over 45 years of trusted service. Find top specialists in Cardiology, Oncology, Orthopedics, and more.";
+
   return {
-    title:
-      lang === "ar"
-        ? "مستشفى بدران - حيث تلتقي الخبرة بالرعاية المتقدمة"
-        : "Badran Hospital - Where Expertise Meets Advanced Care",
-    description:
-      lang === "ar"
-        ? "يقدم مستشفى بدران رعاية طبية احترافية وإنسانية مع أكثر من 45 عامًا من الخدمة الموثوقة. ابحث عن أفضل المتخصصين في أمراض القلب والأورام والعظام والمزيد."
-        : "Badran Hospital provides professional, humane medical care with over 45 years of trusted service. Find top specialists in Cardiology, Oncology, Orthopedics, and more.",
+    metadataBase: new URL("https://www.badranhospital.com"),
+    title,
+    description,
+    alternates: {
+      languages: {
+        en: "/en",
+        ar: "/ar",
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: lang === "ar" ? "ar_EG" : "en_US",
+      url: `https://www.badranhospital.com/${lang}`,
+      title,
+      description,
+      siteName: "Badran Hospital",
+      images: [
+        {
+          url: "/dr.badran.webp",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/dr.badran.webp"],
+    },
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: "Badran Hospital",
+    },
+    formatDetection: {
+      telephone: false,
+    },
   };
 }
 
@@ -54,6 +92,7 @@ export default async function RootLayout({
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
       <body className={`${poppins.variable} antialiased`}>
         <NuqsAdapter>
+          <HospitalSchema />
           <Navbar lang={lang} dict={dict.nav} />
           {children}
           <Footer dict={dict.footer} lang={lang} />

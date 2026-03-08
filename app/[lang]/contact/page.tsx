@@ -1,6 +1,23 @@
 import { ContactForm } from "@/components/contact/contact-form";
 import { getDictionary, Locale } from "@/app/dictionaries";
 import MapWrapper from "@/components/contact/map-wrapper";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+  return generatePageMetadata({
+    title: dict.nav.contact,
+    description: dict.contactPage.subtitle,
+    lang,
+    path: "/contact",
+  });
+}
 
 export default async function ContactPage({
   params,

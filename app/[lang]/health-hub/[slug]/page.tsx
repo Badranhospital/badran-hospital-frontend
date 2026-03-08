@@ -7,6 +7,62 @@ import { fetchStrapi, getStrapiMediaUrl } from "@/lib/strapi";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { BlocksRenderer } from "@/components/health-hub/blocks-renderer";
 import { Button } from "@/components/ui/button";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}): Promise<Metadata> {
+  const { lang, slug } = await params;
+
+  // Fetch the English post first as base reference
+  const enData = await fetchStrapi("health-hubs", {
+    "filters[slug][$eq]": slug,
+    populate: "*",
+    locale: "en",
+  });
+
+  if (!enData?.data || enData.data.length === 0) {
+    return { title: "Article Not Found | Badran Hospital" };
+  }
+
+  const enPost = enData.data[0];
+  let post = enPost;
+
+  if (lang === "ar") {
+    const arLocalization = enPost.localizations?.find(
+      (loc: any) => loc.locale === "ar",
+    );
+    if (arLocalization) {
+      const filterKey = arLocalization.documentId
+        ? "filters[documentId][$eq]"
+        : "filters[id][$eq]";
+      const filterVal = arLocalization.documentId || arLocalization.id;
+      const arData = await fetchStrapi("health-hubs", {
+        [filterKey]: filterVal,
+        populate: "*",
+        locale: "ar",
+      });
+      if (arData?.data && arData.data.length > 0) {
+        post = arData.data[0];
+      }
+    }
+  }
+
+  const imageUrl = getStrapiMediaUrl(
+    post.banner?.formats?.large?.url || post.banner?.url || null,
+  );
+
+  return generatePageMetadata({
+    title: post.title,
+    description: post.excerpt || post.title,
+    lang,
+    path: `/health-hub/${slug}`,
+    image: imageUrl || "/dr.badran.webp",
+  });
+}
 
 export default async function BlogPostPage({
   params,

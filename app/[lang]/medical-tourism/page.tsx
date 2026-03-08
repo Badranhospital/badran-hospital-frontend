@@ -6,6 +6,23 @@ import { CareSec } from "@/components/medical-tourism/care-sec";
 import { CtaSec } from "@/components/medical-tourism/cta-sec";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as any);
+  return generatePageMetadata({
+    title: dict.nav.medicalTourism,
+    description: dict.medicalTourism.hero.subtitle,
+    lang,
+    path: "/medical-tourism",
+  });
+}
 
 export default async function MedicalTourismPage({
   params,

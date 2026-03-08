@@ -6,6 +6,26 @@ import { HealthHub } from "@/components/home/health-hub";
 import { HospitalGallery } from "@/components/home/hospital-gallery";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as any);
+  return generatePageMetadata({
+    title:
+      lang === "ar"
+        ? "مستشفى بدران - حيث تلتقي الخبرة بالرعاية المتقدمة"
+        : "Badran Hospital - Where Expertise Meets Advanced Care",
+    description: dict.about.hero.description,
+    lang,
+    path: "/",
+  });
+}
 
 export default async function Page({
   params,

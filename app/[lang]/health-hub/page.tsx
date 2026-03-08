@@ -3,6 +3,23 @@ import { notFound } from "next/navigation";
 import { HealthHubContent } from "@/components/health-hub/health-hub-content";
 import { fetchStrapi } from "@/lib/strapi";
 import { PostSkeleton } from "@/components/health-hub/post-skeleton";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as any);
+  return generatePageMetadata({
+    title: dict.nav.healthHub,
+    description: dict.healthHub.subtitle,
+    lang,
+    path: "/health-hub",
+  });
+}
 
 const PAGE_SIZE = 25;
 

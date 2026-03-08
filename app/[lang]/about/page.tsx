@@ -6,6 +6,23 @@ import { OurCoreSec } from "@/components/about/our-core-sec";
 import { CtaSec } from "@/components/about/cta-sec";
 import { getDictionary, hasLocale } from "@/app/dictionaries";
 import { notFound } from "next/navigation";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as any);
+  return generatePageMetadata({
+    title: dict.nav.aboutUs,
+    description: dict.about.hero.description,
+    lang,
+    path: "/about",
+  });
+}
 
 export default async function AboutPage({
   params,

@@ -81,9 +81,11 @@ export function CenterOfExcellence({
           </p>
         </div>
 
-        {/* Desktop Button (Above Cards) */}
         <div className="hidden md:flex justify-center mb-12">
-          <Link href={`/${lang}/center-of-excellence`}>
+          <Link
+            href={`/${lang}/center-of-excellence`}
+            aria-label={dict.buttonText}
+          >
             <Button
               className="text-white px-10 py-6 rounded-full text-sm font-bold uppercase tracking-wider shadow-md transition-all hover:-translate-y-0.5"
               style={{
@@ -107,6 +109,7 @@ export function CenterOfExcellence({
               <Link
                 key={specialty.key}
                 href={`/${lang}/center-of-excellence#${specialty.key}`}
+                aria-label={`See more details about ${specialty.title}`}
                 className="shrink-0 w-50 md:w-auto snap-center"
               >
                 <Card
@@ -179,7 +182,11 @@ export function CenterOfExcellence({
 
         {/* Mobile Button (Below Cards) */}
         <div className="flex md:hidden justify-center mt-8">
-          <Link href={`/${lang}/center-of-excellence`} className="w-full">
+          <Link
+            href={`/${lang}/center-of-excellence`}
+            aria-label={dict.buttonText}
+            className="w-full"
+          >
             <Button
               className="w-full text-white py-6 rounded-full text-sm font-bold uppercase tracking-wider shadow-md"
               style={{

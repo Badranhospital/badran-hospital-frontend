@@ -122,6 +122,7 @@ export function HealthHubCarousel({
                 <div className="mt-auto pt-2">
                   <Link
                     href={post.href}
+                    aria-label={`${dict.learnMore} about ${post.title}`}
                     className="text-[#12323A] text-sm font-medium underline hover:text-[#0FA5A1] transition-colors inline-flex items-center gap-1"
                   >
                     {dict.learnMore}

@@ -134,6 +134,36 @@ function DoctorsListSkeleton() {
   );
 }
 
+import { getDictionary } from "@/app/dictionaries";
+import { generatePageMetadata } from "@/components/seo/get-metadata";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ lang: string }>;
+  searchParams: Promise<{ query?: string; specialty?: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const search = await searchParams;
+  const dict = await getDictionary(lang as any);
+
+  let title = dict.nav.findDoctor;
+  if (search.query) {
+    title = `${title} - ${search.query}`;
+  } else if (search.specialty && search.specialty !== "all") {
+    title = `${title} - ${search.specialty}`;
+  }
+
+  return generatePageMetadata({
+    title,
+    description: dict.findDoctorPage.subtitle,
+    lang,
+    path: "/find-a-doctor",
+  });
+}
+
 export default async function FindADoctorPage({
   params,
   searchParams,

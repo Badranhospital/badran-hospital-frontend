@@ -53,7 +53,9 @@ export function AboutSection({
                 background: "linear-gradient(to right, #008DC3, #004268)",
               }}
             >
-              <Link href={`/${lang}/about`}>{dict.buttonText}</Link>
+              <Link href={`/${lang}/about`} aria-label={dict.buttonText}>
+                {dict.buttonText}
+              </Link>
             </Button>
           </div>
         </div>
