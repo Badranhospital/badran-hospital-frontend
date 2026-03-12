@@ -35,10 +35,10 @@ export function AboutSection({
           </div>
 
           {/* Text Side */}
-          <div className="w-full md:w-[62%] flex flex-col items-center md:items-start gap-6 md:gap-8 text-justify ">
+          <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-6 md:gap-8 text-justify ">
             <div className="relative">
               <p
-                className={`text-[#063458] text-lg md:text-xl lg:text-2xl leading-normal tracking-wide font-mono  ${
+                className={`text-[#063458] text-lg md:text-xl lg:text-2xl leading-normal tracking-tight font-mono  ${
                   lang === "ar" ? "md:text-right" : "md:text-left"
                 }`}
               >

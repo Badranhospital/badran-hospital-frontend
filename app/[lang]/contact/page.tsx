@@ -40,7 +40,7 @@ export default async function ContactPage({
             <h1 className="text-4xl md:text-5xl font-bold text-[#063458] mb-4">
               {t.title}
             </h1>
-            <p className="text-[#388AA3] text-lg mb-8 max-w-md leading-relaxed">
+            <p className="text-[#063458] text-lg mb-8 max-w-md leading-relaxed">
               {t.subtitle}
             </p>
             <ContactForm dict={t.form} />

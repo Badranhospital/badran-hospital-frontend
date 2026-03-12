@@ -55,12 +55,13 @@ export function Navbar({ lang, dict }: { lang: string; dict: NavDict }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-1 ${
-        isOpen
-          ? "bg-[#0E7C7B]"
-          : isScrolled
-            ? "bg-[#E2F0F7] shadow-lg"
-            : "bg-[#E2F0F7]"
+        isOpen ? "" : isScrolled ? "bg-[#E2F0F7] shadow-lg" : "bg-[#E2F0F7]"
       }`}
+      style={
+        isOpen
+          ? { background: "linear-gradient(to right, #008DC3, #004268)" }
+          : {}
+      }
     >
       <div className="container mx-auto px-4 md:px-6 relative z-50">
         <div className="flex items-center justify-between h-16 md:h-24">
@@ -133,7 +134,12 @@ export function Navbar({ lang, dict }: { lang: string; dict: NavDict }) {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-[#0E7C7B] animate-in fade-in slide-in-from-top-5 duration-300">
+        <div
+          className="lg:hidden fixed inset-0 z-40 animate-in fade-in slide-in-from-top-5 duration-300"
+          style={{
+            background: "linear-gradient(to right, #008DC3, #004268)",
+          }}
+        >
           <div className="flex flex-col h-dvh pt-24 pb-8 overflow-y-auto">
             <nav className="container mx-auto px-4 flex flex-col gap-6 items-center justify-start flex-1">
               {navLinks.map((link) => (

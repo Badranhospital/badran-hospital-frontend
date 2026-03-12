@@ -197,7 +197,7 @@ export const SpecialtiesSec = ({ dict, lang }: SpecialtiesSecProps) => {
                     {/* Text Content */}
                     <div className="max-w-4xl space-y-6 md:space-y-8">
                       {/* Mobile Title */}
-                      <h2 className="block md:hidden text-2xl font-extrabold text-[#0F3556] mb-2 leading-tight">
+                      <h2 className="block md:hidden text-2xl font-extrabold text-[#0F3556] mb-4 leading-tight">
                         {spec.title}
                       </h2>
 

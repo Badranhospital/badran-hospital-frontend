@@ -26,6 +26,12 @@ interface StrapiPost {
       thumbnail?: { url: string };
     };
   } | null;
+  localizations?: {
+    id: number;
+    documentId: string;
+    locale: string;
+    slug: string | null;
+  }[];
 }
 
 // Fallback placeholder posts when Strapi is unavailable
@@ -133,16 +139,29 @@ export async function HealthHub({
 }) {
   // Fetch latest 6 posts from Strapi (server component)
   const strapiData = await fetchStrapi("health-hubs", {
-    populate: "banner",
+    populate: "*",
     locale: lang,
     sort: "publishedAt:desc",
     "pagination[pageSize]": "8",
   });
 
-  const posts: StrapiPost[] =
+  let posts: StrapiPost[] =
     strapiData?.data && strapiData.data.length > 0
       ? strapiData.data
       : PLACEHOLDER_POSTS;
+
+  // If language is Arabic, use the English slug for the URL
+  if (lang === "ar") {
+    posts = posts.map((post: any) => {
+      const enLocalization = post.localizations?.find(
+        (loc: any) => loc.locale === "en",
+      );
+      return {
+        ...post,
+        slug: enLocalization?.slug || post.slug,
+      };
+    });
+  }
 
   const carouselPosts: CarouselPost[] = posts.map((post) => {
     const imageUrl =

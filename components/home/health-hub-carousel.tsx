@@ -135,7 +135,7 @@ export function HealthHubCarousel({
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-center items-center gap-4 mt-2">
+      <div className="md:flex justify-center hidden  items-center gap-4 mt-2">
         <button
           onClick={() => scroll("left")}
           disabled={!canScrollLeft}
