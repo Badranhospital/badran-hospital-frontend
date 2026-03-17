@@ -10,7 +10,7 @@ export function LocationMap() {
         frameBorder="0"
         scrolling="no"
         style={{ border: 0 }}
-        src="https://www.openstreetmap.org/export/embed.html?bbox=31.19,30.04,31.21,30.06&layer=mapnik&marker=30.0494,31.2001"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.6566531050876!2d31.20696194089239!3d30.048133275136767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458412f0611f0e1%3A0xdf5bc6992523b85!2z2YXYs9iq2LTZgdmJINio2K_Ysdin2YY!5e0!3m2!1sar!2seg!4v1773742201858!5m2!1sar!2seg"
         title="Badran Hospital Location"
         allowFullScreen
       />

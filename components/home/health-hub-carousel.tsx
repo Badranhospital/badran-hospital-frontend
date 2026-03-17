@@ -100,7 +100,12 @@ export function HealthHubCarousel({
                 )}
                 {/* Kind Badge */}
                 {post.kind && (
-                  <div className="absolute top-4 right-4 bg-[#0FA5A1]/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white uppercase">
+                  <div
+                    className="absolute top-4 right-4 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white uppercase"
+                    style={{
+                      background: "linear-gradient(to right, #008DC3, #004268)",
+                    }}
+                  >
                     {post.kind.toUpperCase()}
                   </div>
                 )}
@@ -109,7 +114,7 @@ export function HealthHubCarousel({
               {/* Content */}
               <div className="p-4 md:p-5 flex flex-col grow">
                 {/* Date */}
-                <span className="text-[#6B8D96] text-xs md:text-sm mb-3 block">
+                <span className="text-[#008DC3] text-xs md:text-sm mb-3 block">
                   {post.date}
                 </span>
 
