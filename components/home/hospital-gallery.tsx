@@ -28,6 +28,9 @@ const galleryImages = [
   { src: "/hospital-gallery/image-8.webp", alt: "Hospital Facility 8" },
   { src: "/hospital-gallery/image-9.webp", alt: "Hospital Facility 9" },
   { src: "/hospital-gallery/image-10.webp", alt: "Hospital Facility 10" },
+  { src: "/hospital-gallery/image-11.webp", alt: "Hospital Facility 11" },
+  { src: "/hospital-gallery/image-12.webp", alt: "Hospital Facility 12" },
+  { src: "/hospital-gallery/image-13.webp", alt: "Hospital Facility 13" },
 ];
 
 export function HospitalGallery({

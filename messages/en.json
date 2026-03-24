@@ -120,7 +120,7 @@
           "description": "Equipped with state-of-the-art monitoring systems, our ICU provides 24/7 critical care for patients who need continuous observation and specialized medical attention."
         },
         "inpatient": {
-          "title": "Inpatient Clinics",
+          "title": "Inpatient Rooms and Suites",
           "description": "Safe, comfortable, and closely monitored recovery. Our inpatient department provides 24/7 medical supervision and a supportive healing environment for patients who require extended care or post-surgery recovery."
         },
         "outpatient": {
@@ -141,7 +141,7 @@
         },
         "radiology": {
           "title": "Radiology Department",
-          "description": "Using advanced imaging technologies such as CT, MRI, and digital X-ray, our radiology department supports fast and precise diagnosis for all medical conditions."
+          "description": "Using advanced imaging technologies such as CT, and digital X-ray, our radiology department supports fast and precise diagnosis for all medical conditions."
         }
       }
     },
@@ -275,7 +275,7 @@
     },
     "weOffer": {
       "subtitle": "Why Egypt?",
-      "title": "World-Class Healthcare at Accessible Prices",
+      "title": "World-Class Healthcare, Made Accessible in Egypt",
       "items": {
         "costEffective": {
           "title": "Cost Effective",

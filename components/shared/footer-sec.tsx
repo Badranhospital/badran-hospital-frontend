@@ -63,7 +63,7 @@ const socialLinks = [
 export function Footer({ dict, lang }: { dict: FooterDict; lang: string }) {
   const footerLinks = getFooterLinks(dict.links, lang);
   return (
-    <footer className="bg-linear-to-b from-[#B2EBF2] to-[#80DEEA]">
+    <footer className="bg-linear-to-br from-[#D2EAEF] to-[#86BBF1]">
       {/* Main Footer Content */}
       <div className="container mx-auto px-5 py-10 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 ">

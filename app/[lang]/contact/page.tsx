@@ -3,6 +3,8 @@ import { getDictionary, Locale } from "@/app/dictionaries";
 import MapWrapper from "@/components/contact/map-wrapper";
 import { generatePageMetadata } from "@/components/seo/get-metadata";
 import { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -60,8 +62,8 @@ export default async function ContactPage({
                 <h3 className="text-xl font-bold text-[#063458]">
                   {tInfo.phone}
                 </h3>
-                <div className="flex flex-row gap-1 mt-1">
-                  <a
+                <div className="flex flex-col gap-4 mt-1">
+                  {/* <a
                     href="tel:19986"
                     className="text-[#274760] text-lg font-medium hover:underline"
                   >
@@ -73,7 +75,43 @@ export default async function ContactPage({
                     className="text-[#274760] text-lg font-medium hover:underline"
                   >
                     +2 0102 964 0837
-                  </a>
+                  </a> */}
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src="/icons/icon-13.svg"
+                      alt="Phone"
+                      width={26}
+                      height={26}
+                      className="shrink-0"
+                    />
+                    <div className="flex flex-wrap gap-1" dir="ltr">
+                      <Link
+                        href="tel:19986"
+                        className="text-[#274760] text-lg font-medium hover:underline"
+                      >
+                        19986
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src="/icons/footerwhatsapp.svg"
+                      alt="Phone"
+                      width={26}
+                      height={26}
+                      className="shrink-0"
+                    />
+                    <div className="flex flex-wrap gap-1" dir="ltr">
+                      <Link
+                        href="https://wa.me/201029640837"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#274760] text-lg font-medium hover:underline whitespace-nowrap"
+                      >
+                        +2 0102 964 0837
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
 

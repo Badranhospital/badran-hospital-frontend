@@ -67,8 +67,9 @@ export function CollapsibleBtn({ lang }: { lang: string }) {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`w-[52px] h-[52px] rounded-full shadow-xl flex items-center justify-center transition-all duration-300 ${
-          isOpen ? "bg-red-500 rotate-90" : "bg-[#0FA5A1] hover:scale-105"
+          isOpen ? "bg-red-500 rotate-90" : "hover:scale-105"
         }`}
+        style={!isOpen ? { background: "linear-gradient(to right, #008DC3, #004268)" } : undefined}
         aria-label="Toggle Support Menu"
       >
         {isOpen ? (
