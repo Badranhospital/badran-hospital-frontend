@@ -21,7 +21,7 @@ type GalleryDict = {
 const galleryImages = [
   { src: "/hospital-gallery/image-1.webp", alt: "Hospital Facility 1" },
   { src: "/hospital-gallery/image-2.webp", alt: "Hospital Facility 2" },
-  { src: "/hospital-gallery/image-3.webp", alt: "Hospital Facility 3" },
+  // { src: "/hospital-gallery/image-3.webp", alt: "Hospital Facility 3" },
   { src: "/hospital-gallery/image-4.webp", alt: "Hospital Facility 4" },
   { src: "/hospital-gallery/image-6.webp", alt: "Hospital Facility 6" },
   { src: "/hospital-gallery/image-7.webp", alt: "Hospital Facility 7" },
