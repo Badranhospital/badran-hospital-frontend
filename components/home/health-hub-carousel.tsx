@@ -80,7 +80,7 @@ export function HealthHubCarousel({
           {posts.map((post) => (
             <Card
               key={post.id}
-              className="shrink-0 w-[85vw] sm:w-[340px] snap-center p-0 gap-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full border-none"
+              className="shrink-0 w-[85vw] sm:w-[340px] snap-center p-0 gap-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col h-96 border-none"
             >
               {/* Image */}
               <div className="relative h-[200px] md:h-[220px] overflow-hidden bg-gray-100">
